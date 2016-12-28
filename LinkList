@@ -1,0 +1,25 @@
+#include <stddio.h>
+typedef struct node 
+{
+   int data;
+   struct node *next;
+ }link
+ 
+ link *creat (int n)
+ {
+   int i;
+   link *head,*p,*s;
+   p=head=(link *) malloc(sizeof(link));
+   for(i=1;i<n;i++)
+    {
+      s=(link *) malloc(sizeof(link));
+      scanf("%d",&s->data);
+      p->next = s;
+      p=s;
+    }
+   p->next=NULL;
+   return head ;
+   }
+   
+      
+      
