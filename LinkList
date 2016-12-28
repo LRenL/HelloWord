@@ -1,9 +1,9 @@
-#include <stddio.h>
+#include <stdio.h>
 typedef struct node 
 {
    int data;
    struct node *next;
- }link
+ }link;
  
  link *creat (int n)
  {
